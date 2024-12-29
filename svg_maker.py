@@ -17,8 +17,8 @@ mainline_moves_count = 0
 for move in game.mainline_moves():
     mainline_moves_count += 1
     board.push(move)
-    svgs.append(chess.svg.board(board,size = 350))
+    svgs.append(chess.svg.board(board, size = 350))
 
-for i in range(5, mainline_moves_count):
+for i in range(5, mainline_moves_count + 1):
     with open(f"spanish_test{i}.svg", "w") as f:
         f.write(svgs[i])
