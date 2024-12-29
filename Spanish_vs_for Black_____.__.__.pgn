@@ -1,0 +1,23 @@
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Spanish"]
+[Black "for Black"]
+[Result "*"]
+[Link "https://www.chess.com/analysis/library/4c6T8k8cZc?tab=analysis&move=22"]
+
+1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 (4. Bxc6 dxc6 5. O-O) 4... Nf6 5. O-O (5.
+d3 b5 6. Bb3 Bc5 7. c3 d6 8. Bg5 h6 9. Bh4 g5 10. Bg3 O-O 11. Nbd2 Bb6 12. Qe2
+Kg7 13. Nf1 a5 14. a4 b4 15. Ne3 Rb8 16. Bc4 bxc3 17. bxc3 Ne7 18. h4 g4 19. Nh2
+Bxe3 20. Qxe3 Nh5) 5... b5 6. Bb3 Bc5 7. a4 (7. c3 d6 8. d4 Bb6 9. Be3 O-O 10.
+Nbd2 Re8 11. Re1 h6 12. h3 exd4 13. cxd4 Nb4 14. Qb1 c5 15. a3 Nc6) (7. Re1 d6
+8. c3 O-O 9. d4 Bb6 10. Be3 $6 {Blocks Rook from defense of e4, allows Bg4 to
+attack central structure} 10... Bg4) (7. Nxe5 Nxe5 8. d4 Bxd4 9. Qxd4 d6 10. f4
+Nc6 11. Qc3 Bb7 12. e5 Ne4 13. Qe3 Na5 {White loses bishop pair, equal
+position}) 7... Rb8 8. c3 (8. Nxe5 Nxe5 9. d4 Bxd4 10. Qxd4 d6 11. f4 Nc6 12.
+Qc3 Ne7 13. e5 Ne4 14. Qe1 Nc5 15. Ba2 O-O 16. Nc3 $6 b4 17. Nd5 b3 18. Bxb3 Nxb3
+19. Nxe7+ Qxe7 20. cxb3) 8... d6 9. d4 Bb6 10. a5 Ba7 11. h3 Bb7 12. Be3 (12.
+Re1) 12... Nxe4 13. d5 Bxe3 $1 14. dxc6 Nxf2 15. Qe2 Nxh3+ 16. Kh1 $1 Nf2+ 17. Rxf2
+Bxf2 18. cxb7 Ba7 {Game may have continued...} (18... Ba7 19. Bd5 Qd7 20. Nd4
+Qe7 21. Bc6+ Kd8 22. Nf3 e4 $2 {+0.28}) *
