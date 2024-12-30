@@ -17,6 +17,32 @@ def invoke(action, **params):
         raise Exception(response['error'])
     return response['result']
 
-invoke('createDeck', deck='test1')
-result = invoke('deckNames')
-print('got list of decks: {}'.format(result))
+invoke('createDeck', deck='Spanish')
+params = {
+        "note": {
+            "deckName": "Spanish",
+            "modelName": "Basic",
+            "fields": {
+                "Front": "front content",
+                "Back": "back content"
+            },
+            "options": {
+                "allowDuplicate": False,
+                "duplicateScope": "deck",
+                "duplicateScopeOptions": {
+                    "deckName": "Spanish",
+                    "checkChildren": False,
+                    "checkAllModels": False
+                }
+            },
+            "picture": [{
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/A_black_cat_named_Tilly.jpg/220px-A_black_cat_named_Tilly.jpg",
+                "filename": "black_cat.jpg",
+                "skipHash": "8d6e4646dfae812bf39651b59d7429ce",
+                "fields": [
+                    "Back"
+                ]
+            }]
+        }
+    }
+invoke('addNote', params)
