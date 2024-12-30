@@ -16,20 +16,19 @@ board = game.board()
 
 #list of svgs
 svgs = []
+svgs_variations = []
 board_orientation = playing_as
 
 #generates svg's for mainline
 mainline_moves_count = 0
 for move in game.mainline_moves():
-    mainline_moves_count += 1
     board.push(move)
     svgs.append(chess.svg.board(board,lastmove=move,orientation=board_orientation,coordinates=False, size = 350))
+    mainline_moves_count += 1
 
-print(game.variations)
-#svgs_variations = []
-#for variation in game.variations:
-#    board.push(move)
-#    svgs_variations.append(chess.svg.board(board,lastmove=move,orientation=board_orientation,coordinates=False, size = 350))
+# new way of iterating through: use nodes in order to more easily access variations.
+#for n in game.mainline():
+
 
 for i in range(0, 6):
     if i % 2 == 0:
