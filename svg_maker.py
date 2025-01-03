@@ -40,7 +40,7 @@ def goThroughGame(notes, node):
     for v in node.variations:
         if node.turn() == playing_as and node.ply() > 1:
             notes.append(create_svg(node.board(), v.board()))
-        return goThroughGame(notes, v)
+        notes = goThroughGame(notes, v)
     print('returning notes')
     return notes
 
