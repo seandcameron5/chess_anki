@@ -23,8 +23,8 @@ params = {
             "deckName": "Spanish",
             "modelName": "Basic",
             "fields": {
-                "Front": "front content",
-                "Back": "back content"
+                "Front": "",
+                "Back": ""
             },
             "options": {
                 "allowDuplicate": False,
@@ -36,13 +36,21 @@ params = {
                 }
             },
             "picture": [{
-                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/A_black_cat_named_Tilly.jpg/220px-A_black_cat_named_Tilly.jpg",
-                "filename": "black_cat.jpg",
-                "skipHash": "8d6e4646dfae812bf39651b59d7429ce",
+                "path": r"C:\Users\seans\chess_anki\italian4b.svg",
+                "filename": "italian4b.svg",
                 "fields": [
                     "Back"
                 ]
+            },
+            {
+                "path": r"C:\Users\seans\chess_anki\italian4w.svg",
+                "filename": "italian4w.svg",
+                "fields": [
+                    "Front"
+                ]
             }]
+
         }
     }
-invoke('addNote', params)
+
+invoke('addNote', **params)
