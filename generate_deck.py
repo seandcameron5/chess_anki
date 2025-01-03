@@ -14,7 +14,7 @@ def generate_params(deckName: str, fields: list[str], file_names: list[str], fie
                 "allowDuplicate": False,
                 "duplicateScope": "deck",
                 "duplicateScopeOptions": {
-                    "deckName": "Spanish",
+                    "deckName": deckName,
                     "checkChildren": False,
                     "checkAllModels": False
                 }
