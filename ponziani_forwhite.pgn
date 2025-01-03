@@ -1,0 +1,33 @@
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "Ponziani"]
+[Black "for White"]
+[Result "*"]
+
+1.e4 e5 2.Nf3 Nc6 3.c3 
+    {The Ponziani opening is one of the oldest openings in chess history 
+    and chess books as it supports an immediate d4. Although it’s rarely
+    seen in tournaments, it’s very underrated as white can control the 
+    centre and develop pieces quickly.}
+3...Nf6 
+    {Ponziani Opening, Jaenisch Counterattack
+    
+    With 3. Nf6, Black attacks the e4-pawn. This takes advantage of 
+    White's last move, as Nc3 is no longer possible due to the pawn on c3.
+    }
+    ( 3...d5 4.Qa4 f6 5.d3 )
+4.d4 
+    {With 4. d4, White ignores the attack on the e-pawn and counterattacks
+    Black's central pawn on e5.
+    
+    Black now has a choice - they can take the e-pawn, take the d-pawn, 
+    strike in the center with d5, or defend their own pawn with d6.
+    
+    This is the most common line in the Ponziani opening at both beginner 
+    and master level.}
+4...Nxe4 5.d5 Na5 6.b4! 
+    {The black knight is now trapped! White is winning}
+*
+
