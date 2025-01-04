@@ -97,7 +97,7 @@ invoke('createDeck', deck=opening)
 # adding notes
 params = []
 for i in range(len(notes)):
-    params.append(generate_params(deckName=opening, fields=["Front", "Back"], file_names=[opening+f'{i}'+'f.svg', opening+f'{i}'+'b.svg'], field_texts=["", notes[i][2] + "\n\n" + notes[i][3] + "\n\n"]))
+    params.append(generate_params(deckName=opening, fields=["Front", "Back"], file_names=[opening+f'{i}'+'f.svg', opening+f'{i}'+'b.svg'], field_texts=["", notes[i][2] + "\n\n\n" + notes[i][3] + "\n\n\n"]))
 
 for p in params:
     invoke('addNote', **p)
