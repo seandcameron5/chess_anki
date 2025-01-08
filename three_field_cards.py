@@ -4,17 +4,20 @@ import chess.pgn
 import os
 import json
 import urllib.request
+from stockfish import Stockfish
+
 
 # is this pgn for Black or White (which side are you learning?)
 playing_as = chess.BLACK
 
 #opening name
-opening = 'Spanish (B)'
+opening = 'Ponziani: Vulkovic Gambit (B)'
 
 # opening pgn, setting up board
-pgn = open("spanish_forblack.pgn")
+pgn = open("ponzianiVulkovicGambit_forblack.pgn")
 game = chess.pgn.read_game(pgn)
 board_orientation = playing_as
+engine = chess.engine.SimpleEngine.popen_uci("stockfish-windows-x86-64-avx2.exe")
 
 
 # Definition of functions used to generate cards and place cards into Anki deck
@@ -43,7 +46,7 @@ def generate_params(deckName: str, fields: list[str], file_names: list[str], fie
                 field: text for field, text in zip(fields, field_texts if field_texts else ["" for _ in fields])
             },
             "options": {
-                "allowDuplicate": False,
+                "allowDuplicate": True,
                 "duplicateScope": "deck",
                 "duplicateScopeOptions": {
                     "deckName": deckName,
@@ -68,8 +71,11 @@ def create_svg(board1, board2, move1, move2, comment1, comment2):
     svgs = []
     svgs.append(chess.svg.board(board1,lastmove=move1,orientation=board_orientation,coordinates=False, size = 500))
     svgs.append(chess.svg.board(board2,lastmove=move2,orientation=board_orientation,coordinates=False, size = 500))
+    eval = engine.analyse(board1, chess.engine.Limit(time=0.2))["score"].white().score() / 100
+    #eval2 = engine.analyse(board2, chess.engine.Limit(time=0.2))["score"].white().score() / 100
+    print(eval)
     svgs.append(comment1)
-    svgs.append(comment2)
+    svgs.append(f"{comment1} \n Evaluation: {eval}")
     return svgs
 
 # recursively seraches through game, creating svgs
