@@ -75,7 +75,7 @@ def create_svg(board1, board2, move1, move2, comment1, comment2):
     #eval2 = engine.analyse(board2, chess.engine.Limit(time=0.2))["score"].white().score() / 100
     print(eval)
     svgs.append(comment1)
-    svgs.append(f"{comment1} \n Evaluation: {eval}")
+    svgs.append(f"{comment2}\n\nEvaluation: {eval}")
     return svgs
 
 # recursively seraches through game, creating svgs
