@@ -1,0 +1,49 @@
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+
+1.d4 e5 2.dxe5 Nc6 
+    ( 2...d6 3.Nf3 )
+3.Nf3 f6 
+    ( 3...d6 4.Bg5 f6 5.exf6 Nxf6 6.e3 Be7 7.Nc3 O-O 8.Be2 Bf5 9.O-O )
+    ( 3...d5 {Many new players to the game might play en passant because 
+    it looks cool but in this case, it's best to ignore this chance.
+    } 4.Bf4 {White is up a pawn and it's a central pawn. In all aspects, 
+    this should be very good for White. It's critical to stabilize this 
+    pawn and develop naturally.
+    } 4...Bg4 5.Nbd2 {It's important to reinforce the f3-knight!
+    } 5...Nge7 6.h3 Be6 7.e3 {Yet again, the e5-pawn is stable and White 
+    is up a clean pawn.} )
+    ( 3...Nge7 {This is an interesting idea that is relatively common. 
+    It's important to consolidate the e5-pawn.} 4.Bf4 Ng6 5.Bg3 {The pawn 
+    is stabilized and White is free to develop. The only way that White 
+    can go wrong is if they lose the pawn but in this case, there's 
+    nothing to worry about.
+    } 5...Qe7 6.Nc3 Ngxe5 7.Nxe5 Nxe5 8.Nd5 Qd6 9.Qd4 {Black has gone all 
+    out to take this pawn but will be a very high price.
+    } 9...f6 10.O-O-O c6 11.Nxf6+ gxf6 12.Qxd6 Bxd6 13.Rxd6 {White is up a
+    pawn, has the bishop pair and initiative. The game is simply over.} )
+    ( 3...Qe7 {3...Qe7 is the most common by far and leads to a very well 
+    known sacrifice that we will not shy away from.
+    } 4.Bg5 Qb4+ 5.Nc3 Qxb2 6.Bd2 Bb4 7.Rb1 Qa3 
+        ( 7...Qxc3 8.Bxc3 Bxc3+ 9.Nd2 Bxe5 
+            ( 9...Nxe5 10.Rb3 Ba5 11.Qa1! {This is one of the concrete 
+            ways to create a lot of problems.
+            } 11...f6 
+                ( 11...d6 12.f4 {Winning the piece. The e5-knight can't 
+                move because of the g7-pawn.
+                } )
+            12.Rb5 Bb6 13.Rxe5+ {White can afford to sacrifice the 
+            exchange. Black's king is exposed and White will continue the 
+            attack.} 13...fxe5 14.Qxe5+ )
+        10.g3 Nf6 11.Bg2 )
+    8.Nd5 {Targeting c7} 8...Ba5 9.e4 Nge7 10.Be2 {The main issue in 
+    Black's position is the queen on a3 which is completely offside. White
+    can proceed with natural development as Black's position is just 
+    terrible.} )
+4.e4 Nxe5 5.Nxe5 fxe5 6.Qh5+ g6 7.Qxe5+ Qe7 8.Qxh8 *
+

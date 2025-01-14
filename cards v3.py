@@ -4,17 +4,17 @@ import chess.pgn
 import os
 import json
 import urllib.request
-from stockfish import Stockfish
+#from stockfish import Stockfish
 
 
 # is this pgn for Black or White (which side are you learning?)
 playing_as = chess.WHITE
 
 #opening name
-opening = 'Evan\'s Gambit (W)'
+opening = 'Scandinavian [3...Qa5 4. d4 Nf6] (W)'
 
 # opening pgn, setting up board
-pgn = open("evansGambit_forwhite.pgn")
+pgn = open("ScandiQa5Nf6_forwhite.pgn")
 game = chess.pgn.read_game(pgn)
 board_orientation = playing_as
 engine = chess.engine.SimpleEngine.popen_uci("stockfish-windows-x86-64-avx2.exe")
@@ -71,7 +71,7 @@ def create_svg(board1, board2, move1, move2, comment1, comment2):
     svgs = []
     svgs.append(chess.svg.board(board1,lastmove=move1,orientation=board_orientation,coordinates=False, size = 500))
     svgs.append(chess.svg.board(board2,lastmove=move2,orientation=board_orientation,coordinates=False, size = 500))
-    eval = engine.analyse(board1, chess.engine.Limit(time=1))["score"].white().score() / 100
+    eval = engine.analyse(board1, chess.engine.Limit(time=5))["score"].white().score() / 100
     #eval2 = engine.analyse(board2, chess.engine.Limit(time=0.2))["score"].white().score() / 100
     print(eval)
     svgs.append(comment1)

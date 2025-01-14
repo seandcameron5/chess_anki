@@ -1,0 +1,46 @@
+[Event "?"]
+[Site "?"]
+[Date "????.??.??"]
+[Round "?"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+
+1.e4 d5 2.exd5 Qxd5 3.Nc3 Qa5 4.d4 Nf6 5.Nf3 Bg4 
+    ( 5...Bf5 6.Ne5 {The threat in Nc4, nearly trapping the queen.} 6...c6
+    {Opening up an escape for the Queen} 
+        ( 6...e6 7.g4 Bg6 8.Nc4 Qa6 9.h4 {Similar to the Jobava London. If
+        h6} 9...h6 10.Ne5 Qb6 11.Bb5+ c6 12.Nxg6 fxg6 13.Bd3 {Black has no
+        good way to defend g6} )
+    )
+    ( 5...Nc6 6.Bd2 Bg4 
+        ( 6...a6 7.Bc4 Nxd4 8.Nxd4 Qc5 9.Bxf7+ Kxf7 10.Nf3 )
+        ( 6...Qb6 7.Na4 {The Queen is trapped!} )
+    7.Nb5 Qb6 8.c4 Bxf3 
+        ( 8...Nxd4 9.Nbxd4 {That just lost Black a minor piece.} )
+    9.Qxf3 Nxd4 10.Nxd4 Qxd4 11.Qxb7 Qe4+ 12.Qxe4 Nxe4 13.Be3 )
+    ( 5...c6 6.Bc4 Bg4 
+        ( 6...Bf5 7.Bd2 e6 8.Nd5 Qd8 9.Nxf6+ Qxf6 
+            ( 9...gxf6 10.O-O Rg8 11.Re1 Bh3 12.Ng5 fxg5 13.Qh5 Bf5 14.
+            Bxe6 Bxe6 15.Rxe6+ Be7 16.Rae1 {White is completely winning 
+            despite being down material.} )
+        10.Qe2 Nd7 11.O-O-O )
+    7.h3 Qh5 
+        ( 7...Bxf3 8.Qxf3 e6 9.Bd2 Nbd7 )
+        ( 7...Bh5 8.g4 Bg6 9.Bd2 e6 10.h4 Nxg4 11.h5 Bf5 12.Qe2 )
+    8.hxg4 Qxh1+ 9.Bf1 e6 
+        ( 9...Nxg4 10.Ne4 {The only move which keeps the advantage for 
+        White.} 10...Qh5 11.Ne5 {Exploiting the pin on the Knight on g4} 
+        11...f5 12.Nc5 )
+    10.g5 )
+6.h3 Bh5 
+    ( 6...Bxf3 7.Qxf3 c6 
+        ( 7...Nc6 8.Bb5 O-O-O 9.Bxc6 bxc6 10.Qxc6 )
+    )
+    ( 6...Qh5 7.hxg4 Qxh1 8.Ne2 Nxg4 9.Ng3 )
+    ( 6...Bf5 7.g4 )
+7.g4 Bg6 8.Ne5 e6 
+    ( 8...Nc6 9.Nc4 {The Queen is trapped! Black must sacrifice a piece to
+    save it.} 9...Qb4 10.a3 )
+9.Bg2 c6 10.O-O *
+
